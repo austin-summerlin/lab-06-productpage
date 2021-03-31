@@ -14,7 +14,9 @@ for (let cartItem of cart) {
     const tr = createTableRow(cartItem, matchingGem);
 
     table.append(tr);
-    const totalRow = calOrderTotal(cart, gems);
-    table.append(totalRow);
 }
+
+    // const totalRow = calOrderTotal(cart, gems);
+
+    // table.append(totalRow);
 

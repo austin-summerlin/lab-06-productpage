@@ -11,12 +11,12 @@ test('will take in an array and id and returns the matching item', (expect) => {
     // Set up your arguments and expectations
     const expected =
     {
-        'category': 'Aquarius',
-        'description': 'Purple',
-        'id': 'itemAmethyst',
-        'image': '../assets/amethyst.PNG',
-        'name': 'Amethyst',
-        'price': '$75'
+        id: 'itemAmethyst',
+        name: 'Amethyst',
+        image: '../assets/amethyst.PNG',
+        description: 'Purple',
+        category: 'Aquarius',
+        price: 75,
     };
 
     //Act 
