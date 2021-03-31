@@ -5,7 +5,7 @@ export const gems = [
         image: '../assets/amethyst.PNG',
         description: 'Purple',
         category: 'Aquarius',
-        price: '$75',
+        price: 75,
     },
     {
         id: 'itemEmerald',
@@ -13,7 +13,7 @@ export const gems = [
         image: '../assets/emerald.PNG',
         description: 'Green',
         category: 'Taurus',
-        price: '$100',
+        price: 100,
     },
     {
         id: 'itemMoonstone',
@@ -21,7 +21,7 @@ export const gems = [
         image: '../assets/moonstone.PNG',
         description: 'Turquoise',
         category: 'Gemini',
-        price: '$75',
+        price: 75,
     },
     {
         id: 'itemRuby',
@@ -29,7 +29,7 @@ export const gems = [
         image: '../assets/ruby.PNG',
         description: 'Red',
         category: 'Cancer',
-        price: '$100',
+        price: 100,
     },
     {
         id: 'itemSapphire',
@@ -37,7 +37,7 @@ export const gems = [
         image: '../assets/sapphire.PNG',
         description: 'Blue',
         category: 'Virgo',
-        price: '$100',
+        price: 100,
     },
     {
         id: 'itemTopaz',
@@ -45,6 +45,6 @@ export const gems = [
         image: '../assets/topaz.PNG',
         description: 'Gold',
         category: 'Scorpio',
-        price: '$100',
+        price: 100,
     },
 ];

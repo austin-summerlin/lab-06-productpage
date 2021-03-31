@@ -44,3 +44,51 @@ export function makeGemLi(gems) {
 
     return li;
 }
+
+
+export function createTableRow(someCartItem, someGems) {
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    const tdPrice = document.createElement('td');
+    const tdQuantity = document.createElement('td');
+
+    tdName.textContent = someGems.name;
+    tdQuantity.textContent = someCartItem.quantity;
+    const total = someGems.price * someCartItem.quantity;
+
+    const config = {
+        currency: 'USD',
+        style: 'currency',
+    };
+
+    const totalAsUSD = total.toLocaleString('en-US', config);
+    tdPrice.textContent = totalAsUSD;
+
+    tr.append(tdName, tdQuantity, tdPrice);
+
+    return tr;
+}
+
+export function calOrderTotal(cartArray, gemsArray) {
+    let sum = 0;
+
+    for (let cartItem of cartArray) {
+        const matchingGem = findById(gemsArray, cartItem.id);
+        const lineItem = matchingGem.price * cartItem.quantity;
+
+        sum = sum + lineItem;
+    }
+
+    const tr = document.createElement('tr');
+
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    const td3 = document.createElement('td');
+
+    td3.textContent = `$${sum}.00`;
+
+    tr.append(td1, td2, td3);
+
+    return tr;
+
+}

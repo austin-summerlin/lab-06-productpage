@@ -1,15 +1,15 @@
 export const cart = [
     {
         id: 'itemAmethyst',
-        quantity: 2,
+        quantity: 4,
     },
     {
         id: 'itemEmerald',
-        quantity: 2,
+        quantity: 3,
     },
     {
         id: 'itemMoonstone',
-        quantity: 2,
+        quantity: 1,
     },
     {
         id: 'itemRuby',
@@ -17,7 +17,7 @@ export const cart = [
     },
     {
         id: 'itemSapphire',
-        quantity: 2,
+        quantity: 3,
     },
     {
         id: 'itemTopaz',
