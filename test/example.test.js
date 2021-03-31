@@ -1,18 +1,21 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { gems } from '../gems-data.js';
+import { findById } from '../utils.js';
+
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('will take in an array and id and returns the matching item', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = true;
-    
+
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = findById(gems, 'id');
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.deepEqual(actual);
 });
