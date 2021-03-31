@@ -2,14 +2,13 @@ import { gems } from '../gems-data.js';
 import { findById } from '../utils.js';
 import { cart } from './cart-data.js';
 import { createTableRow } from '../utils.js';
-import { calOrderTotal } from '../utils.js';
+// import { calOrderTotal } from '../utils.js';
 
 const table = document.querySelector('table');
 
 for (let cartItem of cart) {
     const matchingGem = findById(gems, cartItem.id);
 
-    console.log(matchingGem, cartItem);
 
     const tr = createTableRow(cartItem, matchingGem);
 
