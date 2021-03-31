@@ -2,7 +2,7 @@ export const gems = [
     {
         id: 'itemAmethyst',
         name: 'Amethyst',
-        image: '/assets/amethyst.png',
+        image: './assets/amethyst.png',
         description: 'Purple',
         category: 'Aquarius',
         price: '$75',
