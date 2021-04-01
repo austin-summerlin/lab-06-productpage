@@ -2,8 +2,8 @@
 // import { example } from '../example.js';
 import { gems } from '../gems-data.js';
 import { findById } from '../utils.js';
-// import { calcItemTotal } from '../utils';
-// import { calOrderTotal } from '../utils';
+// import { createTableRow } from '../utils';
+
 
 const test = QUnit.test;
 
@@ -28,4 +28,3 @@ test('will take in an array and id and returns the matching item', (expect) => {
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(expected, actual);
 });
-

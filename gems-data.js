@@ -2,7 +2,7 @@ export const gems = [
     {
         id: 'itemAmethyst',
         name: 'Amethyst',
-        image: '../assets/amethyst.PNG',
+        image: '../assets/amethyst.png',
         description: 'Purple',
         category: 'Aquarius',
         price: 75,
@@ -10,7 +10,7 @@ export const gems = [
     {
         id: 'itemEmerald',
         name: 'Emerald',
-        image: '../assets/emerald.PNG',
+        image: '../assets/emerald.png',
         description: 'Green',
         category: 'Taurus',
         price: 100,
@@ -18,7 +18,7 @@ export const gems = [
     {
         id: 'itemMoonstone',
         name: 'Moonstone',
-        image: '../assets/moonstone.PNG',
+        image: '../assets/moonstone.png',
         description: 'Turquoise',
         category: 'Gemini',
         price: 75,
@@ -26,7 +26,7 @@ export const gems = [
     {
         id: 'itemRuby',
         name: 'Ruby',
-        image: '../assets/ruby.PNG',
+        image: '../assets/ruby.png',
         description: 'Red',
         category: 'Cancer',
         price: 100,
@@ -34,7 +34,7 @@ export const gems = [
     {
         id: 'itemSapphire',
         name: 'Sapphire',
-        image: '../assets/sapphire.PNG',
+        image: '../assets/sapphire.png',
         description: 'Blue',
         category: 'Virgo',
         price: 100,
@@ -42,7 +42,7 @@ export const gems = [
     {
         id: 'itemTopaz',
         name: 'Topaz',
-        image: '../assets/topaz.PNG',
+        image: '../assets/topaz.png',
         description: 'Gold',
         category: 'Scorpio',
         price: 100,
