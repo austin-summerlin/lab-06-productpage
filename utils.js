@@ -45,25 +45,16 @@ export function makeGemLi(gems) {
     return li;
 }
 
-
 export function createTableRow(someCartItem, someGems) {
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
-    const tdPrice = document.createElement('td');
     const tdQuantity = document.createElement('td');
+    const tdPrice = document.createElement('td');
+    const total = someGems.price * someCartItem.quantity;
 
     tdName.textContent = someGems.name;
     tdQuantity.textContent = someCartItem.quantity;
-    const total = someGems.price * someCartItem.quantity;
-
-    const config = {
-        currency: 'USD',
-        style: 'currency',
-    };
-
-    const totalAsUSD = total.toLocaleString('en-US', config);
-    tdPrice.textContent = totalAsUSD;
-
+    tdPrice.textContent = total;
     tr.append(tdName, tdQuantity, tdPrice);
 
     return tr;
@@ -90,5 +81,4 @@ export function calOrderTotal(cartArray, gemsArray) {
     tr.append(td1, td2, td3);
 
     return tr;
-
 }

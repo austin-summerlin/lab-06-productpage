@@ -66,8 +66,17 @@ a {
 table {
     width: 100%;
     border: solid 1px black;
+
 }
+
 
 td {
     border: solid 1px black;
+    width: 200px;
+}
+
+
+thead{
+    font-weight: 800;
+    font-size: 1.2rem;
 }
