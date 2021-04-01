@@ -1,9 +1,12 @@
+import { addToCart } from './local-storage-utils.js';
+
 export function findById(array, id) {
     for (let item of array) {
         if (item.id === id) {
             return item;
         }
     }
+    return null;
 }
 
 export function makeGemLi(gems) {
@@ -39,6 +42,10 @@ export function makeGemLi(gems) {
     const button = document.createElement('button');
 
     button.textContent = 'Purchase';
+
+    button.addEventListener('click', () => {
+        addToCart(gems.id);
+    });
 
     li.append(divName, image, divDescription, divCategory, divPrice, button);
 

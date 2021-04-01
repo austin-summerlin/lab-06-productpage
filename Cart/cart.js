@@ -1,8 +1,10 @@
 import { gems } from '../gems-data.js';
-import { findById } from '../utils.js';
-import { cart } from './cart-data.js';
-import { createTableRow } from '../utils.js';
-import { calOrderTotal } from '../utils.js';
+import { findById, createTableRow, calOrderTotal } from '../utils.js';
+import { getCart } from '../local-storage-utils.js';
+
+const button = document.getElementById('submit');
+
+const cart = getCart();
 
 const table = document.querySelector('table');
 
@@ -12,17 +14,18 @@ for (let cartItem of cart) {
     const tr = createTableRow(cartItem, matchingGem);
 
     table.append(tr);
-
-    // const totalRow = createTableRow(cartItem, matchingGem);
-
-    // table.append(totalRow);
-
-    // const sumTotalRow = calOrderTotal(cart, gems);
-
-    // table.append(sumTotalRow);
-
 }
 
 const sumTotalRow = calOrderTotal(cart, gems);
 
 table.append(sumTotalRow);
+
+button.addEventListener('click', () => {
+    const cart = getCart();
+
+    alert(JSON.stringify(cart));
+
+    localStorage.clear();
+
+    window.location = '/';
+});
