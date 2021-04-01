@@ -14,7 +14,7 @@ test('will take in an array and id and returns the matching item', (expect) => {
     {
         id: 'itemAmethyst',
         name: 'Amethyst',
-        image: '../assets/amethyst.PNG',
+        image: '../assets/amethyst.png',
         description: 'Purple',
         category: 'Aquarius',
         price: 75,
