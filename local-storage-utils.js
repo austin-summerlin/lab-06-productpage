@@ -1,7 +1,7 @@
-import { findById } from './utils.js';
+import { findById } from './utils.js'; // import findById function
+const CART = 'CART'; // magic string 
 
-const CART = 'CART';
-
+// create a function that will get our cart from local storage and stringify it and if there is no cart create one.
 export function getCart() {
     const stringyCart = localStorage.getItem('CART');
     const parsedCart = JSON.parse(stringyCart);
@@ -13,12 +13,14 @@ export function getCart() {
     }
 }
 
+// create a function that will take strinified cart and place it in local storage
 export function setCart(parsedCart) {
     const stringyCart = JSON.stringify(parsedCart);
 
     localStorage.setItem(CART, stringyCart);
 }
 
+// create a function that will take info from local storage and place it into the cart page
 export function addToCart(productId) {
     const cart = getCart();
     const matchingItem = findById(cart, productId);

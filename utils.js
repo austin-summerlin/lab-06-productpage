@@ -89,3 +89,8 @@ export function calOrderTotal(cartArray, gemsArray) {
 
     return tr;
 }
+
+export function calItemTotal(quantity, price) {
+    let total = quantity * price;
+    return total;
+}
