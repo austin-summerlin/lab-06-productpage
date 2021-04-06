@@ -27,5 +27,5 @@ button.addEventListener('click', () => {
 
     localStorage.clear();
 
-    window.location = '/';
+    window.location.href('index.html');
 });
