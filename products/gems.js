@@ -11,5 +11,5 @@ for (let gem of gems) {
 const button = document.getElementById('cartButton');
 
 button.addEventListener('click', () => {
-    window.location.href = ('/cart/index.html');
+    window.location.href = ('cart/index.html');
 });
