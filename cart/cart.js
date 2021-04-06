@@ -25,7 +25,8 @@ button.addEventListener('click', () => {
 
     alert(JSON.stringify(cart));
 
+    window.location.href = ('/');
+
     localStorage.clear();
 
-    window.location.href = ('index.html');
 });

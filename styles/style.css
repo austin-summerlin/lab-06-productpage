@@ -80,3 +80,16 @@ thead{
     font-weight: 800;
     font-size: 1.2rem;
 }
+
+#cartButton {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#buttonDiv {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
