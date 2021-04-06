@@ -1,15 +1,15 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { calItemTotal } from '../utils.js';
 import { gems } from '../gems-data.js';
 import { findById } from '../utils.js';
+
 // import { createTableRow } from '../utils';
 
 
 const test = QUnit.test;
 
 test('will take in an array and id and returns the matching item', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
     const expected =
     {
         id: 'itemAmethyst',
@@ -19,12 +19,28 @@ test('will take in an array and id and returns the matching item', (expect) => {
         category: 'Aquarius',
         price: 75,
     };
-
-    //Act 
-    // Call the function you're testing and set the result to a const
     const actual = findById(gems, 'itemAmethyst');
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
     expect.deepEqual(expected, actual);
 });
+
+test('will take in item quantity and price and give us the total', (expect) => {
+    const itemPrice = 20;
+    const itemQuantity = 3;
+    const expected = 60;
+    const actual = calItemTotal(itemPrice, itemQuantity);
+
+    expect.equal(actual, expected);
+
+});
+
+test('will take in item quantity and price and give us the total', (expect) => {
+    const itemPrice = 20;
+    const itemQuantity = 3;
+    const expected = 60;
+    const actual = calItemTotal(itemPrice, itemQuantity);
+
+    expect.equal(actual, expected);
+
+});
+
